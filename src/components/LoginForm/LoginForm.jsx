@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useDispatch } from 'react-redux';
 import { logInThunk } from 'reduxConfig/auth/operations';
-import icons from '../../images/logo.png';
+import icons from '../../images/icons.svg';
 import * as yup from 'yup';
 import { yupResolver } from '@hookform/resolvers/yup';
 
