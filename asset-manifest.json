@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/Echipa2-MoneyGuard/static/css/main.9c33b6b4.css",
-    "main.js": "/Echipa2-MoneyGuard/static/js/main.c10a096f.js",
+    "main.css": "/Echipa2-MoneyGuard/static/css/main.4a6b6303.css",
+    "main.js": "/Echipa2-MoneyGuard/static/js/main.05e125ea.js",
+    "static/media/gradient.webp": "/Echipa2-MoneyGuard/static/media/gradient.97f7d926370def36c1c7.webp",
     "static/media/desctopRegister.webp": "/Echipa2-MoneyGuard/static/media/desctopRegister.4d04a4a93eccc2beb204.webp",
     "static/media/tabletRegistr.webp": "/Echipa2-MoneyGuard/static/media/tabletRegistr.a07821c01d71a9c6800b.webp",
     "static/media/desctopLogin.webp": "/Echipa2-MoneyGuard/static/media/desctopLogin.455a3304b47ab081804a.webp",
     "static/media/tabletLogin.webp": "/Echipa2-MoneyGuard/static/media/tabletLogin.6fe88424d2836d318e69.webp",
+    "static/media/icons.svg": "/Echipa2-MoneyGuard/static/media/icons.3df88140045c353bfdd6b20e0756a4b1.svg",
     "static/media/mobileLogin.webp": "/Echipa2-MoneyGuard/static/media/mobileLogin.2da9430439eae880996b.webp",
     "static/media/mobileRegistr.webp": "/Echipa2-MoneyGuard/static/media/mobileRegistr.cd96492ed450e20db6d0.webp",
     "index.html": "/Echipa2-MoneyGuard/index.html",
-    "main.9c33b6b4.css.map": "/Echipa2-MoneyGuard/static/css/main.9c33b6b4.css.map",
-    "main.c10a096f.js.map": "/Echipa2-MoneyGuard/static/js/main.c10a096f.js.map"
+    "static/media/plus.svg": "/Echipa2-MoneyGuard/static/media/plus.6194a661e88e1e5113d28da2398b6404.svg",
+    "static/media/minus.svg": "/Echipa2-MoneyGuard/static/media/minus.c1930871236002c803c7b6a6c0b99024.svg",
+    "main.4a6b6303.css.map": "/Echipa2-MoneyGuard/static/css/main.4a6b6303.css.map",
+    "main.05e125ea.js.map": "/Echipa2-MoneyGuard/static/js/main.05e125ea.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c33b6b4.css",
-    "static/js/main.c10a096f.js"
+    "static/css/main.4a6b6303.css",
+    "static/js/main.05e125ea.js"
   ]
 }
