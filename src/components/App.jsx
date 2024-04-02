@@ -13,10 +13,10 @@ import LoginPage from '../pages/LoginPage';
 import RegistrationPage from '../pages/RegistrationPage';
 import DashboardPage from '../pages/DashboardPage/DashboardPage';
 import HomePage from '../pages/HomePage/HomePage';
-
+import StatisticsPage from '../pages/StatisticPage/StatisticsPage';
 import CurrencyPage from '../pages/CurrencyPage';
 
-const App = () => {
+export const App = () => {
   const dispatch = useDispatch();
   const isRefreshing = useSelector(selectIsRefreshing);
   const isTabletOrDesktop = useMediaQuery({ query: '(min-width: 768px)' });
@@ -77,7 +77,7 @@ const App = () => {
           >
             <Route index element={<HomePage />} />
             <Route path="home" element={<HomePage />} />
-            {/* <Route path="statistics" element={<StatisticsPage />} /> */}
+            <Route path="statistics" element={<StatisticsPage />} />
             <Route
               path="currency"
               element={
@@ -92,4 +92,3 @@ const App = () => {
     </>
   );
 };
-export default App;
