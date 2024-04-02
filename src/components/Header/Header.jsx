@@ -1,4 +1,3 @@
-//
 import React, { useState } from 'react';
 import {
   ExitText,
@@ -16,17 +15,13 @@ import { IoExitOutline } from 'react-icons/io5';
 import { useMediaQuery } from 'react-responsive';
 import icons from '../../images/icons.svg';
 import ModalLogout from 'components/ModalLogout/ModalLogout';
-
 function Header({ closeModal = null }) {
   const userName = useSelector(selectUserName);
   const isTabletOrDesktop = useMediaQuery({ query: '(min-width: 768px)' });
-
   const [isModalOpen, setIsModalOpen] = useState(false);
-
   function handleExitClick() {
     !closeModal ? setIsModalOpen(true) : closeModal(false);
   }
-
   return (
     <StyledHeader>
       <Container>
@@ -39,7 +34,6 @@ function Header({ closeModal = null }) {
           </LogoWrapper>
           <UserInfoWrapper>
             <UsernameText>{userName}</UsernameText>
-
             {isModalOpen && <ModalLogout closeModal={setIsModalOpen} />}
             <StyledExit onClick={handleExitClick}>
               <IoExitOutline size={18} />
@@ -51,5 +45,4 @@ function Header({ closeModal = null }) {
     </StyledHeader>
   );
 }
-
 export default Header;
