@@ -1,4 +1,4 @@
-// import { AddTransaction } from '../AddTransactionModal/AddTransaction/AddTransaction';
+import { AddTransaction } from '../AddTransactionModal/AddTransaction/AddTransaction';
 import React, { useState } from 'react';
 import { BtnOpenModal } from './BtnAddTransaction.styled';
 
@@ -27,9 +27,9 @@ export const BtnAddTransaction = () => {
       >
         {svgOpenModal}
       </BtnOpenModal>
-      {/* {isAddTransactionModalOpen && (
+      {isAddTransactionModalOpen && (
         <AddTransaction closeModal={setIsTransactionModalOpen} />
-      )} */}
+      )}
     </>
   );
 };
