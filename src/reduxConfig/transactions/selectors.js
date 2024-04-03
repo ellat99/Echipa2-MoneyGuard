@@ -16,7 +16,7 @@ export const selectFilteredCategories = createSelector(
   }
 );
 
-export const selectSortedTransactios = createSelector(
+export const selectSortedTransactions = createSelector(
   [selectTransactions],
   transactions => {
     return [...transactions].sort(

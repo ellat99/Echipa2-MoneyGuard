@@ -16,12 +16,12 @@ import {
 } from './TransactionList.styled';
 import TransactionCardItem from 'components/TransactionCardItem/TransactionCardItem';
 import React, { useState } from 'react';
-import { selectSortedTransactios } from 'reduxConfig/transactions/selectors';
+import { selectSortedTransactions } from 'reduxConfig/transactions/selectors';
 import ModalEditTransaction from '../ModalEditTransaction/ModalEditTransaction';
 import { EditTransactionForm } from '../EditTransactionForm/EditTransactionForm';
 
 const TransactionList = () => {
-  const transactions = useSelector(selectSortedTransactios);
+  const transactions = useSelector(selectSortedTransactions);
 
   const [isEditTransactionForm, setIsEditTransactionForm] = useState(false);
   const [transactionEditData, setTransactionEditData] = useState({});
