@@ -1,49 +1,26 @@
-import React, { useEffect, useRef } from 'react';
-import Chart from 'chart.js/auto';
-import { useSelector } from 'react-redux';
-import { selectSortedTransactions } from 'reduxConfig/transactions/selectors'; // Modificarea numelui selectorului
+import React from 'react';
+import { Chart } from '../../components/Chart/Chart';
+import StatisticsDashboard from '../../components/StatisticsDashboard/StatisticsDashboard';
+import StatisticsTable from '../../components/StatisticsTable/StatisticsTable';
+import {
+  StyledContainer,
+  StyledContent,
+  StyledTable,
+} from './StatisticsPage.styled';
 
-function generateRandomColor() {
-  // Generăm culori aleatoare în format hexadecimal
-  const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-  return randomColor;
-}
-
-function StatisticsPage() {
-  const chartRef = useRef(null);
-  const chartInstance = useRef(null);
-  const transactions = useSelector(selectSortedTransactions); // Folosirea noului selector
-
-  useEffect(() => {
-    if (chartInstance.current) {
-      chartInstance.current.destroy();
-    }
-    const myChartRef = chartRef.current.getContext('2d');
-
-    // Generăm culori aleatoare pentru fiecare categorie
-    const backgroundColors = transactions.map(() => generateRandomColor());
-
-    chartInstance.current = new Chart(myChartRef, {
-      type: 'doughnut',
-      data: {
-        labels: transactions.map(transaction => transaction.categoryId), // Folosirea numelor de categorie în loc de ID-uri
-        datasets: [
-          {
-            backgroundColor: backgroundColors,
-            data: transactions.map(transaction => transaction.amount),
-          },
-        ],
-      },
-    });
-
-    return () => {
-      if (chartInstance.current) {
-        chartInstance.current.destroy();
-      }
-    };
-  }, [transactions]);
-
-  return <canvas ref={chartRef} />;
-}
+const StatisticsPage = () => {
+  return (
+    <StyledContainer>
+      <h2>Statistics</h2>
+      <StyledContent>
+        <Chart />
+        <StyledTable>
+          <StatisticsDashboard />
+          <StatisticsTable />
+        </StyledTable>
+      </StyledContent>
+    </StyledContainer>
+  );
+};
 
 export default StatisticsPage;
