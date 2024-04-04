@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Echipa2-MoneyGuard/static/css/main.64be5490.css",
-    "main.js": "/Echipa2-MoneyGuard/static/js/main.14d718db.js",
+    "main.js": "/Echipa2-MoneyGuard/static/js/main.007d36db.js",
     "static/media/gradient.webp": "/Echipa2-MoneyGuard/static/media/gradient.97f7d926370def36c1c7.webp",
     "static/media/Poppins-Regular.ttf": "/Echipa2-MoneyGuard/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-SemiBold.ttf": "/Echipa2-MoneyGuard/static/media/Poppins-SemiBold.ac8d04b620e54be9b0f0.ttf",
@@ -17,10 +17,10 @@
     "static/media/plus.svg": "/Echipa2-MoneyGuard/static/media/plus.6194a661e88e1e5113d28da2398b6404.svg",
     "static/media/minus.svg": "/Echipa2-MoneyGuard/static/media/minus.c1930871236002c803c7b6a6c0b99024.svg",
     "main.64be5490.css.map": "/Echipa2-MoneyGuard/static/css/main.64be5490.css.map",
-    "main.14d718db.js.map": "/Echipa2-MoneyGuard/static/js/main.14d718db.js.map"
+    "main.007d36db.js.map": "/Echipa2-MoneyGuard/static/js/main.007d36db.js.map"
   },
   "entrypoints": [
     "static/css/main.64be5490.css",
-    "static/js/main.14d718db.js"
+    "static/js/main.007d36db.js"
   ]
 }
