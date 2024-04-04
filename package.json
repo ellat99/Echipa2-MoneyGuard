@@ -11,6 +11,7 @@
     "@testing-library/user-event": "^13.5.0",
     "antd": "^5.15.4",
     "axios": "^1.6.8",
+    "bundle-js": "^1.0.3",
     "chart.js": "^4.4.2",
     "formik": "^2.4.5",
     "notiflix": "^3.2.7",

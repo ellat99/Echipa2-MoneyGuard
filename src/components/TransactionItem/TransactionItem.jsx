@@ -16,7 +16,7 @@ import { selectCategories } from 'reduxConfig/transactions/selectors';
 import { LuPencil } from 'react-icons/lu';
 import { changeBalanceValue } from '../../reduxConfig/auth/slice';
 
-const TransactionItem = ({ data, handleModal, setData }) => {
+export const TransactionItem = ({ data, handleModal, setData }) => {
   const dispatch = useDispatch();
 
   const { id, transactionDate, type, categoryId, comment, amount } = data;
