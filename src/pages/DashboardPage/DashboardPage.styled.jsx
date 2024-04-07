@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import { styled, keyframes } from 'styled-components';
 import bcg from '../../images/gradient.webp';
 
 export const SectionContainer = styled.section`
@@ -6,12 +6,16 @@ export const SectionContainer = styled.section`
   min-height: 100vh;
   background-image: url(${bcg});
   background-position: top;
-
-  @media only screen and (min-width: 768px) {
-    height: 100vh;
-    background-image: none;
-  }
-`;
+  top:0px;
+	width:100%;
+	height:100%;
+  min-height: 800px;
+	position:absolute;
+	left:0%;
+  background-size: cover;
+}
+  
+  `;
 
 export const DashboardContainer = styled.div`
   display: flex;
@@ -210,5 +214,83 @@ export const LeftContainer = styled.div`
       right: 0;
       background-color: var(--transparency-60);
     }
+  }
+`;
+
+const loaderAnimation = keyframes`
+  0% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.6;
+    transform: translate(0, 0px) rotateZ(0deg);
+  }
+  75% {
+    width: 80px;
+    height: 80px;
+    opacity: 0.8;
+    transform: translate(100px, 600px) rotateZ(270deg);
+  }
+  100% {
+    width: 80px;
+    height: 80px;
+    opacity:0;
+    transform: translate(150px, 800px) rotateZ(360deg);
+  }
+`;
+
+export const Loader = styled.div`
+  text-align: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+`;
+
+export const LoaderSpan = styled.span`
+  display: inline-block;
+  margin: -280px 40px 54px -34px;
+  background: url('https://cdn.theatlantic.com/assets/media/img/posts/Screen%20Shot%202013-10-08%20at%209.13.38%20AM.png');
+  background-size: contain;
+  animation: ${loaderAnimation} 15s infinite linear forwards;
+`;
+
+export const LoaderSpanSpecific = styled(LoaderSpan)`
+  &:nth-child(5n + 5) {
+    animation-delay: 1.3s;
+  }
+  &:nth-child(3n + 2) {
+    animation-delay: 1.5s;
+  }
+  &:nth-child(2n + 5) {
+    animation-delay: 1.7s;
+  }
+  &:nth-child(3n + 10) {
+    animation-delay: 2.7s;
+  }
+  &:nth-child(7n + 2) {
+    animation-delay: 3.5s;
+  }
+  &:nth-child(4n + 5) {
+    animation-delay: 5.5s;
+  }
+  &:nth-child(3n + 7) {
+    animation-delay: 8s;
+  }
+  &:nth-child(8n + 4) {
+    animation-delay: 10.5s;
+  }
+  &:nth-child(9n + 3) {
+    animation-delay: 13s;
+  }
+  &:nth-child(10n + 7) {
+    animation-delay: 15.5s;
+  }
+  &:nth-child(11n + 5) {
+    animation-delay: 18s;
+  }
+  &:nth-child(12n + 2) {
+    animation-delay: 20.5s;
   }
 `;
