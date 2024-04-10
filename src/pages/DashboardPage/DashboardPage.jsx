@@ -11,8 +11,6 @@ import {
   GradientRightBottom,
   GradientRightTop,
   LeftContainer,
-  Loader,
-  LoaderSpan,
   NavAndBalanceWrapper,
   SectionContainer,
 } from './DashboardPage.styled';
@@ -38,21 +36,12 @@ function DashboardPage() {
     dispatch(allTransactionThunk());
   }, [dispatch]);
 
-  const loaderSpans = [...Array(40)].map((_, index) => {
-    const randomPositionStyle = {
-      position: 'absolute',
-      top: `${Math.random() * 100}%`,
-      left: `${Math.random() * 100}%`,
-    };
 
-    return <LoaderSpan key={index} style={randomPositionStyle} />;
-  });
 
   return (
     <SectionContainer>
       <Header />
       <Container>
-        <Loader>{loaderSpans}</Loader>
         <DashboardContainer>
           <GradientLeftTop />
           <GradientLeftBottom />
